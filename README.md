@@ -2,8 +2,10 @@
 
 ## Installation
 
+~~~~
 <link href="~/tertium.tooltips.css" rel="stylesheet">
 <script src="~/tertium.tooltips.js"></script>
+~~~~
 
 ## Parameters
 
