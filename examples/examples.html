@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../tertium.tooltips.css" rel="stylesheet">
+    <style>
+      .inputBlock {
+        padding: 40px 40px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="inputBlock">
+      <label>Input</label>
+      <input type="text" name="itext" class="inputText" placeholder="Enter Hello, world!">
+    </div>
+
+    <div class="inputBlock">
+      <label>Number</label>
+      <input type="number" name="inum" class="inputNumber" placeholder="Enter not current year">
+    </div>
+
+    <div class="inputBlock">
+      <label>Select</label>
+      <select name="iselect" class="selectInput" placeholder="Select any option">
+        <option>
+          Option 1
+        </option>
+        <option>
+          Option 2
+        </option>
+      </select>
+    </div>
+
+  <script src="../tertium.tooltips.js"></script>
+  <script>
+    // text
+    TertiumTooltip({
+      objects: document.getElementsByClassName('inputText'),
+      title: 'Success! Congratulations!<br/>This message will close automatically close after 10 sec.',
+      type: 'success',
+      autoclose: 10000,
+      result: true,
+      onchange: function (i) {
+        if (i.value === "Hello, world!") {
+          return true;
+        }
+      }
+    });
+    // number
+    TertiumTooltip({
+      objects: document.getElementsByClassName('inputNumber'),
+      title: 'Error! Please select current or next year.',
+      type: 'error',
+      result: false,
+      onchange: function (i) {
+        var today = new Date();
+        var year = today.getFullYear();
+        var nexty = year + 1;
+        if (i.value < year || i.value > nexty) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+    });
+    // select
+    TertiumTooltip({
+      objects: document.getElementsByClassName('selectInput'),
+      title: 'Info! You changed this option.<br/>This message will close automatically close after  5 sec.',
+      type: 'info',
+      result: true,
+      autoclose: 5000,
+      onchange: function(i) {
+        return true;
+      }
+    });
+  </script>
+  </body>
+</html>

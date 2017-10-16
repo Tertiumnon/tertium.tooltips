@@ -1,0 +1,32 @@
+.tertium-tooltip {
+  position: absolute;
+  background-color: #fff;
+  font-size: 0.8rem;
+  padding: 10px 15px;
+  box-shadow: 1px 1px 5px #adadad;
+  color: #555;
+  border: 1px solid #ccc;
+  z-index: 1;
+  margin-top: 1px;
+}
+.tertium-tooltip.success {
+  color: green;
+  border-color: green;
+}
+.tertium-tooltip.error {
+  color: red;
+  border-color: red;
+}
+.tertium-tooltip.info {
+  color: blue;
+  border-color: blue;
+}
+input.tertium-tooltip-input-success {
+  border-color: green;
+}
+input.tertium-tooltip-input-error {
+  border-color: red;
+}
+input.tertium-tooltip-input-info {
+  border-color: blue;
+}
