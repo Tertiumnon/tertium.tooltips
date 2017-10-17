@@ -20,7 +20,9 @@
 
 ### HTML
 
+~~~~
 <input type="text" name="itext" class="inputText" placeholder="Enter Hello, world!">
+~~~~
 
 ### JS
 
