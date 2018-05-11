@@ -2,10 +2,16 @@
 
 ## Installation
 
-~~~~
-<link href="~/tertium.tooltips.css" rel="stylesheet">
-<script src="~/tertium.tooltips.js"></script>
-~~~~
+Import css: 
+```
+@import url('node_modules/tertium.tooltips/tertium.tooltips.css');
+```
+
+Import js:
+
+```
+import TertiumTooltip from 'node_modules/tertium.tooltips/tertium.tooltips.js';
+```
 
 ## Parameters
 
@@ -20,13 +26,13 @@
 
 ### HTML
 
-~~~~
+```
 <input type="text" name="itext" class="inputText" placeholder="Enter Hello, world!">
-~~~~
+```
 
 ### JS
 
-~~~~
+```
 TertiumTooltip({
   objects: document.getElementsByClassName('inputText'),
   title: 'Success! Congratulations!<br/>This message will close automatically close after 10 sec.',
@@ -39,4 +45,4 @@ TertiumTooltip({
     }
   }
 });
-~~~~
+```

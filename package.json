@@ -1,6 +1,6 @@
 {
   "name": "tertium.tooltips",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Tooltips for html-inputs.",
   "main": "tertium.tooltips.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "tooltips"
   ],
   "author": "Vit Tertiumnon",
-  "license": "MIT",
+  "license": "GPL",
   "bugs": {
     "url": "https://github.com/Tertiumnon/tertium.tooltips/issues"
   },
